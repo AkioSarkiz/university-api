@@ -7,13 +7,14 @@
     ],
     "python.formatting.provider": "black",
     "workbench.colorCustomizations": {
-        "activityBar.activeBackground": "#1f6fd0",
         "activityBar.activeBorder": "#ee90bb",
+        "activityBar.activeBackground": "#1f6fd0",
         "activityBar.background": "#1f6fd0",
         "activityBar.foreground": "#e7e7e7",
         "activityBar.inactiveForeground": "#e7e7e799",
         "activityBarBadge.background": "#ee90bb",
         "activityBarBadge.foreground": "#15202b",
+        "commandCenter.border": "#e7e7e799",
         "sash.hoverBorder": "#1f6fd0",
         "statusBar.background": "#1857a4",
         "statusBar.foreground": "#e7e7e7",
@@ -23,8 +24,7 @@
         "titleBar.activeBackground": "#1857a4",
         "titleBar.activeForeground": "#e7e7e7",
         "titleBar.inactiveBackground": "#1857a499",
-        "titleBar.inactiveForeground": "#e7e7e799",
-        "commandCenter.border": "#e7e7e799"
+        "titleBar.inactiveForeground": "#e7e7e799"
     },
     "peacock.remoteColor": "#1857a4",
     "sqltools.connections": [
@@ -42,6 +42,7 @@
     "terminal.integrated.defaultProfile.linux": "fish",
     "cSpell.language": "en,es",
     "cSpell.words": [
-        "levelname"
+        "levelname",
+        "viewsets"
     ],
 }

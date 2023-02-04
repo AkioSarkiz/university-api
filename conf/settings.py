@@ -29,7 +29,7 @@ USE_TZ = True
 # -----------------------------------------------------------------------------
 SECRET_KEY = env("DJANGO_SECRET_KEY")
 ALLOWED_HOSTS = env.list("ALLOWED_HOSTS", default=["*"])
-AUTH_USER_MODEL = "users.CustomUser"
+AUTH_USER_MODEL = "university.CustomUser"
 AUTH_PASSWORD_VALIDATORS = [
     {
         "NAME": "django.contrib.auth.password_validation.UserAttributeSimilarityValidator"
@@ -68,7 +68,7 @@ INSTALLED_APPS = [
     "django_cleanup.apps.CleanupConfig",
     "drf_yasg",
     # Local apps
-    "apps.users",
+    "apps.university",
 ]
 
 MIDDLEWARE = [
@@ -147,7 +147,7 @@ REST_FRAMEWORK = {
 }
 
 REST_AUTH_SERIALIZERS = {
-    "USER_DETAILS_SERIALIZER": "apps.users.serializers.CustomUserProfileSerializer",
+    "USER_DETAILS_SERIALIZER": "apps.university.serializers.CustomUserProfileSerializer",
 }
 
 # -----------------------------------------------------------------------------

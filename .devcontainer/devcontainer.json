@@ -6,7 +6,7 @@
 	"dockerComposeFile": "docker-compose.yml",
 	"service": "app",
 	"workspaceFolder": "/django-starter-template",
-	// Configure tool-specific properties.
+
 	"customizations": {
 		// Configure properties specific to VS Code.
 		"vscode": {

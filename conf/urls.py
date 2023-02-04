@@ -3,9 +3,17 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include, re_path
 
-from rest_framework import permissions
+from rest_framework import permissions, routers
 from drf_yasg.views import get_schema_view
 from drf_yasg import openapi
+
+from apps.university import views
+
+
+router = routers.DefaultRouter()
+router.register(r'students', views.StudentViewSet)
+router.register(r'student_groups', views.StudentGroupViewSet)
+router.register(r'teachers', views.TeacherViewSet)
 
 schema_view = get_schema_view(
     openapi.Info(
@@ -21,6 +29,7 @@ schema_view = get_schema_view(
 )
 
 urlpatterns = [
+    path('', include(router.urls)),
     path("admin-panel/", admin.site.urls),
     path("api-auth/", include("rest_framework.urls")),
     path("rest-auth/", include("dj_rest_auth.urls")),
