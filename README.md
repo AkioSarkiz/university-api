@@ -1,6 +1,6 @@
-# Django starter template
+# Simple univercity API
 
-An opinionated django template that work best with VSCode DevContainer. Just hit `CTL/CMD + Shift + p` and select `Reopen in container` and the project will create a dev environment, install all the dependencies, configure the database and migrate for you. From there, create your super user, run the project and work as usual.
+This repository is a simple api. I created this for yourself and I don't need any other activities here.
 
 ## Required
 

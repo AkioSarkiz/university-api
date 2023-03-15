@@ -21,7 +21,7 @@ class StudentGroup(TimestampModel):
     name = models.CharField(max_length=255)
 
     def __str__(self) -> str:
-        return "Group {}".format(self.name)
+        return f"Group {self.name}"
 
 
 class Student(TimestampModel):
