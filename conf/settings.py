@@ -42,8 +42,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # -----------------------------------------------------------------------------
 # Databases
 # -----------------------------------------------------------------------------
-DJANGO_DATABASE_URL = env.db("DATABASE_URL")
-DATABASES = {"default": DJANGO_DATABASE_URL}
+DATABASES = {
+    "default": env.db("DATABASE_URL")
+    }
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 # -----------------------------------------------------------------------------
